@@ -26,20 +26,3 @@ class Score(Turtle):
     def r_point(self):
         self.r_score += 1
         self.update_score()
-
-
-class SideSeparation(Turtle):
-
-    def __init__(self):
-        super().__init__()
-        self.color("white")
-        self.penup()
-        self.goto(0, -310)
-        self.setheading(90)
-        self.draw_line()
-
-    def draw_line(self):
-        self.pendown()
-        self.fd(10)
-        self.penup()
-        self.fd(10)
